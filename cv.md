@@ -43,4 +43,12 @@
 }
    ``` 
 
-   
+## Work Experience: 
+### [VOS](https://sergey962.github.io/Dolgodrudniy_VOS/ "society of the blind landing page") 
+
+## Education: 
+* [Web development for beginners: HTML & CSS](https://stepik.org/cert/578771 "stepic free courses") 
+* [JavaScript for beginners](https://stepik.org/cert/1237986 "stepic free courses") 
+
+## English Language:
+![EF set](src/img/english.jpg "result") 
