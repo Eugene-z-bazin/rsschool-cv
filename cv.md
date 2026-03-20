@@ -44,7 +44,8 @@
    ``` 
 
 ## Work Experience: 
-### [VOS](https://sergey962.github.io/Dolgodrudniy_VOS/ "society of the blind landing page") 
+### [![ВОС](src/img/sergey962.github.io_Dolgodrudniy_VOS_.png)](https://sergey962.github.io/Dolgodrudniy_VOS/) 
+
 
 ## Education: 
 * [Web development for beginners: HTML & CSS](https://stepik.org/cert/578771 "stepic free courses") 
