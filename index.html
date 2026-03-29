@@ -10,97 +10,155 @@
 </head>
 
 <body>
-   <header class="header">
-      <div class="header__cnt">
-         <a href="index.html" class="header__logo">
-            <h1><span class="r">r</span><span class="s">s</span><br>school</h1>
-         </a>
-         <nav class="header__menu">
-            <ul class="menu__list">
-               <li><a href="#about" class="menu-link">About</a></li>
-               <li><a href="#skills" class="menu-link">Skills</a></li>
-               <li><a href="#works" class="menu-link">Works</a></li>
-               <li><a href="#education" class="menu-link">Education</a></li>
-               <li><a href="#git" class="menu-link">My Git</a></li>
-            </ul>
-         </nav>
-      </div>
-   </header>
-   <!-- !MAIN -->
-   <main class="main">
-      <section class="about-me">
-         <div class="about-me__cnt">
-            <div class="about-me__img">
-               <img src="src/img/Eugene.jpeg" alt="Eugen">
-               <h2>Eugene</h2>
-            </div>
-            <div class="about-me__txt">
-               <h2>About me</h2>
-               <p>
-                  Ex-metalworking technologist, I’m learning web development. Interested in historical
-                  literature, cooking. Like to take a walk, street workout and jogging.
-                  Ex-volunteer of the "Last address" project & worked in the archives of the RF in searching of
-                  information
-                  for authors of historical books.
-               </p>
-            </div>
-         </div>
-      </section>
-      <!--! contact & skills -->
-      <section class="contacts-skills">
-         <div class="contacts-skills__cnt">
-            <div class="contacts">
-               <h2>Contacts:</h2>
-               <ul class="contacts__menu">
-                  <li class="menu-item"><span>E-mail: </span>eugvok85@gmail.com</li>
-                  <li class="menu-item"><span>Discord: </span>Eugene (@Eugene-z-baziny)</li>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__cnt">
+            <a href="index.html" class="header__logo">
+               <h1><span class="r">r</span><span class="s">s</span><br>school</h1>
+            </a>
+            <nav class="header__menu">
+               <ul class="menu__list">
+                  <li><a href="#about" class="menu-link">About</a></li>
+                  <li><a href="#skills" class="menu-link">Skills</a></li>
+                  <li><a href="#code" class="menu-link">Code</a></li>
+                  <li><a href="#works" class="menu-link">Works</a></li>
+                  <li><a href="#education" class="menu-link">Education</a></li>
+                  <li><a href="#git" class="menu-link">My Git</a></li>
                </ul>
-            </div>
-            <div class="skills">
-               <h2>Skills:</h2>
-               <ul class="skills__menu">
-                  <li class="menu-item">PC-user (Win/Lin)</li>
-                  <li class="menu-item">MsWorld & Excel</li>
-                  <li class="menu-item">HTML, CSS, JS</li>
-                  <li class="menu-item">SCSS, Bootstrap</li>
-                  <li class="menu-item">AutoCAD, Photoshop</li>
-                  <li class="menu-item">System administrator</li>
-               </ul>
-            </div>
+            </nav>
          </div>
-      </section>
-      <!-- ! -->
-      <section class="code-example">
-         <div class="code-example__cnt">
-            <h2>Code example:</h2>
-            <p>Given two integers a and b, which can be positive or negative, find the sum of all the integers between
-               and including them and return it. If the two numbers are equal return a or b.</p>
-            <pre>
+      </header>
+      <!-- !MAIN -->
+      <main class="main">
+         <section class="about-me" id="about">
+            <div class="about-me__cnt">
+               <div class="about-me__img">
+                  <img src="src/img/Eugene.jpeg" alt="Eugen">
+                  <h2>Eugene</h2>
+               </div>
+               <div class="about-me__txt">
+                  <h2>About me</h2>
+                  <p>
+                     Ex-metalworking technologist, I’m learning web development. Interested in historical
+                     literature, cooking. Like to take a walk, street workout and jogging.
+                     Ex-volunteer of the "Last address" project & worked in the archives of the RF in searching of
+                     information
+                     for authors of historical books.
+                  </p>
+               </div>
+            </div>
+         </section>
+         <!--! contact & skills -->
+         <section class="contacts-skills" id="skills">
+            <div class="contacts-skills__cnt">
+               <div class="contacts">
+                  <h2>Contacts:</h2>
+                  <ul class="contacts__menu">
+                     <li class="menu-item"><span>E-mail: </span>eugvok85@gmail.com</li>
+                     <li class="menu-item"><span>Discord: </span>Eugene (@Eugene-z-baziny)</li>
+                  </ul>
+               </div>
+               <div class="skills">
+                  <h2>Skills:</h2>
+                  <ul class="skills__menu">
+                     <li class="menu-item">PC-user (Win/Lin)</li>
+                     <li class="menu-item">MsWorld & Excel</li>
+                     <li class="menu-item">HTML, CSS, JS</li>
+                     <li class="menu-item">SCSS, Bootstrap</li>
+                     <li class="menu-item">AutoCAD, Photoshop</li>
+                     <li class="menu-item">System administrator</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <!-- ! -->
+         <section class="code-example" id="code">
+            <div class="code-example__cnt">
+               <h2>Code example:</h2>
+               <p>Given two integers a and b, which can be positive or negative, find the sum of all the integers
+                  between
+                  and including them and return it. If the two numbers are equal return a or b.</p>
+               <pre>
                <code>
                function getSum(a, b) {
-                  // Определяем минимальное и максимальное значения
+                  // Determining the minimum and maximum values
                      let start = Math.min(a, b);
                      let end = Math.max(a, b);
 
-                  // Создаём массив чисел от start до end включительно
+                  // Create an array of numbers from start to end inclusive
                      let ar = [];
-                     for (let i = start; i <= end; i++) {
+                     for (let i = start; i &lt;= end; i++) {
                      ar.push(i);
                         }
 
-                  // Считаем сумму элементов массива
+                  // Calculate the sum of array elements
                      return ar.reduce((acc, curr) => acc + curr, 0);
                }
                </code>
             </pre>
+            </div>
+         </section>
+         <!-- ! -->
+         <section class="works" id="works">
+            <div class="works__cnt">
+               <h2>My works:</h2>
+               <div class="works-box">
+                  <div class="works-box-item">
+                     <a target="_blank" href="https://sergey962.github.io/Dolgodrudniy_VOS/">
+                        <h3>SotB</h3>
+                        <img src="/src/img/sergey962.github.io_Dolgodrudniy_VOS_.png" alt="Society of the Blind">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- ! -->
+         <section class="education" id="education">
+            <div class="education__cnt">
+               <div class="learning">
+                  <h2>Education:</h2>
+                  <ul class="education-list">
+                     <li class="education-item">- 2003-2005 BMSTU mechanical engineering technologies (not completed)
+                     </li>
+                     <li class="education-item"><a href="javascript:void(0);">- Web development for beginners: HTML &
+                           CSS</a></li>
+                     <li class="education-item"><a href="javascript:void(0);">- JavaScript for beginners</a></li>
+                  </ul>
+               </div>
+               <div class="language">
+                  <h2>Language</h2>
+                  <ul class="language-list">
+                     <li class="language-item"><a href="javascript:void(0);">- English</a></li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <!-- ! -->
+      </main>
+      <footer class="footer" id="git">
+         <div class="footer__cnt">
+            <!--  -->
+            <div class="footer-item">
+               <a target="_blank" href="https://github.com/Eugene-z-bazin" class="footer-git__link">
+                  <div class="footer-git__link-box">
+                     <img src="src/img/ico/git.png" alt="git">
+                     <p>my Git</p>
+                  </div>
+               </a>
+            </div>
+            <!--  -->
+            <div class="footer-item">
+               <p class="footer-year">
+                  2026
+               </p>
+            </div>
+            <!--  -->
+            <div class="footer-item"><a target="_blank" href="https://rs.school/courses/javascript-preschool-ru"
+                  class="rs-link"><img src="src/img/ico/rs-school-logo.svg" alt="rs" class="footer-img"></a>
+            </div>
          </div>
-      </section>
-      <!-- ! -->
-      <section class="education">
-         
-      </section>
-   </main>
-   <footer class="footer"></footer>
+      </footer>
+   </div>
 </body>
 
 </html>
