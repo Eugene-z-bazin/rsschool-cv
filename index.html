@@ -46,6 +46,59 @@
             </div>
          </div>
       </section>
+      <!--! contact & skills -->
+      <section class="contacts-skills">
+         <div class="contacts-skills__cnt">
+            <div class="contacts">
+               <h2>Contacts:</h2>
+               <ul class="contacts__menu">
+                  <li class="menu-item"><span>E-mail: </span>eugvok85@gmail.com</li>
+                  <li class="menu-item"><span>Discord: </span>Eugene (@Eugene-z-baziny)</li>
+               </ul>
+            </div>
+            <div class="skills">
+               <h2>Skills:</h2>
+               <ul class="skills__menu">
+                  <li class="menu-item">PC-user (Win/Lin)</li>
+                  <li class="menu-item">MsWorld & Excel</li>
+                  <li class="menu-item">HTML, CSS, JS</li>
+                  <li class="menu-item">SCSS, Bootstrap</li>
+                  <li class="menu-item">AutoCAD, Photoshop</li>
+                  <li class="menu-item">System administrator</li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!-- ! -->
+      <section class="code-example">
+         <div class="code-example__cnt">
+            <h2>Code example:</h2>
+            <p>Given two integers a and b, which can be positive or negative, find the sum of all the integers between
+               and including them and return it. If the two numbers are equal return a or b.</p>
+            <pre>
+               <code>
+               function getSum(a, b) {
+                  // Определяем минимальное и максимальное значения
+                     let start = Math.min(a, b);
+                     let end = Math.max(a, b);
+
+                  // Создаём массив чисел от start до end включительно
+                     let ar = [];
+                     for (let i = start; i <= end; i++) {
+                     ar.push(i);
+                        }
+
+                  // Считаем сумму элементов массива
+                     return ar.reduce((acc, curr) => acc + curr, 0);
+               }
+               </code>
+            </pre>
+         </div>
+      </section>
+      <!-- ! -->
+      <section class="education">
+         
+      </section>
    </main>
    <footer class="footer"></footer>
 </body>
