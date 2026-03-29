@@ -25,7 +25,7 @@
    * AutoCad 
 
 ## Code example: 
-### Your task is to write a function maskify, which changes all but the last four characters into '#'. 
+### Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b. 
    ``` 
  function getSum(a, b) {
   // Определяем минимальное и максимальное значения
