@@ -1,0 +1,407 @@
+/* Reset and base styles  */
+* {
+   padding: 0px;
+   margin: 0px;
+   border: none;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+   display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+ul,
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+img,
+svg {
+   max-width: 100%;
+   height: auto;
+}
+
+address {
+   font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+   font-family: inherit;
+   font-size: inherit;
+   color: inherit;
+   background-color: transparent;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+textarea {
+   resize: vertical;
+}
+
+button,
+input[type="submit"] {
+   display: inline-block;
+   box-shadow: none;
+   background-color: transparent;
+   background: none;
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+label {
+   cursor: pointer;
+}
+
+legend {
+   display: block;
+}
+
+input[type="file"] {
+   max-width: 100%;
+}
+
+/* Begin  */
+
+@font-face {
+   font-family: "Gabriela";
+   src:
+      url("src/fonts/Gabriela-Regular.woff") format("woff"),
+      url("src/fonts/Gabriela-Regular.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Long Cool Woman";
+   src:
+      url("src/fonts/LongCoolWomanBold.woff2") format("woff2"),
+      url("src/fonts/LongCoolWomanBold.woff") format("woff");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+:root {
+   --font-family: "Gabriela";
+   --second-family: "Long Cool Woman";
+   --blackColor: #1d0f0f;
+   --whiteColor: #e8e1db;
+   --greenColor: #67722d;
+   --yellowColor: #fbce02;
+   --linkHover: #cf981c;
+   --logoR: rgb(17, 218, 10);
+   --eugeneColor: rgb(109, 14, 14);
+}
+
+* {
+   transition: all 0.3s ease 0s;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: "Times New Roman", Times, serif;
+   font-size: 1.2rem;
+   color: var(--blackColor);
+   a {
+      color: var(--blackColor);
+   }
+}
+
+.wrapper {
+   max-width: 1440px;
+   margin: 0px auto;
+}
+
+h1 {
+   font-size: 3rem;
+   font-weight: bold;
+   line-height: 2.2rem;
+   color: rgb(138, 129, 99);
+}
+
+h2 {
+   font-size: 3rem;
+   font-family: var(--second-family);
+   color: var(--greenColor);
+   word-spacing: 0.25em;
+}
+
+h3 {
+   font-size: 2rem;
+   font-family: var(--font-family);
+   color: var(--greenColor);
+}
+
+.r {
+   color: var(--logoR);
+}
+.s {
+   margin: 25%;
+   color: var(--yellowColor);
+}
+
+.header__cnt {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 40px;
+   background: -webkit-linear-gradient(45deg, rgb(4, 21, 146) 15%, rgb(255, 180, 0));
+   background: -moz-linear-gradient(45deg, rgb(4, 21, 146) 15%, rgb(255, 180, 0));
+   background: linear-gradient(45deg, rgb(4, 21, 146) 15%, rgb(255, 180, 0));
+}
+
+.header__logo {
+   text-transform: uppercase;
+   padding: 0.5em;
+   border-radius: 0.5em;
+}
+
+.header__logo:hover {
+   background: var(--linkHover);
+}
+
+.header__logo:hover .r,
+.header__logo:hover .s {
+   -webkit-text-stroke: 2px var(--whiteColor);
+}
+
+.menu__list {
+   display: flex;
+   padding: 20px 0px;
+   li {
+      margin: 0px 0px 0px 20px;
+   }
+}
+
+.menu-link {
+   font-size: 2rem;
+   font-family: var(--font-family);
+   padding: 0.2em;
+   border-radius: 0.5em;
+}
+
+.menu-link:hover {
+   background: var(--linkHover);
+   color: var(--whiteColor);
+}
+
+/*About-me*/
+
+.about-me__cnt {
+   display: flex;
+   justify-content: space-between;
+   padding: 30px 40px;
+}
+
+.about-me__img h2 {
+   margin: 10px 0px 0px 0px;
+   color: var(--yellowColor);
+   font-size: 4rem;
+   -webkit-text-stroke: 1px var(--blackColor);
+}
+
+.about-me__txt {
+   max-width: 70%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   padding: 30px;
+}
+
+.about-me__txt h2 {
+   margin: 0px 0px 10px 0px;
+}
+
+.about-me__txt p {
+   font-family: var(--font-family);
+}
+
+/*contacts-skills__cnt*/
+
+.contacts-skills__cnt {
+   display: flex;
+   justify-content: space-around;
+   padding: 30px 40px;
+   max-width: 95%;
+   margin: 0px auto;
+   border-radius: 1rem;
+   background: var(--whiteColor);
+}
+
+.contacts h2,
+.skills h2 {
+   display: inline-block;
+}
+
+.contacts__menu,
+.skills__menu {
+   padding: 20px;
+   line-height: 1.8rem;
+}
+
+/*code*/
+
+.code-example__cnt {
+   padding: 30px 40px;
+}
+
+.code-example__cnt h2 {
+   margin: 0px 0px 10px 0px;
+}
+
+.code-example__cnt p {
+   padding: 0px 20px;
+   font-size: 1.4rem;
+}
+
+.code-example__cnt p::first-letter {
+   font-size: 2.5rem;
+   color: var(--linkHover);
+}
+
+.code-example__cnt pre {
+   padding: 20px 0px;
+}
+
+/*works*/
+.works__cnt {
+   padding: 30px 40px;
+}
+
+.works-box {
+   width: 98%;
+   min-height: 300px;
+   margin: 0px auto;
+   padding: 30px 0px;
+}
+
+.works-box-item {
+   width: 100px;
+   border: 3px solid white;
+   border-radius: 0.7rem;
+}
+
+.works-box-item:hover {
+   border: 3px solid var(--eugeneColor);
+}
+
+.works-box-item h3 {
+   margin: 0px 0px 5px 0px;
+}
+
+/*education*/
+
+.education__cnt {
+   display: flex;
+   justify-content: space-around;
+   padding: 30px 40px;
+   max-width: 95%;
+   margin: 0px auto;
+   border-radius: 1rem;
+   background: var(--whiteColor);
+}
+
+.learning h2,
+.language h2 {
+   display: inline-block;
+}
+
+.education-list,
+.language-list {
+   padding: 20px;
+   line-height: 1.8rem;
+}
+
+/*footer*/
+
+.footer__cnt {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 40px;
+   font-family: var(--second-family);
+   font-size: 3.5rem;
+   font-weight: 800;
+}
+
+.footer-git__link-box {
+   display: flex;
+   border-radius: 2rem;
+   width: 170px;
+   justify-content: flex-start;
+   align-items: center;
+   border-radius: 1rem;
+   border: 1px solid white;
+}
+
+.footer-git__link-box p {
+   margin: 0px 0px 0px 25px;
+}
+
+.footer-git__link-box:hover {
+   color: var(--linkHover);
+   border: 1px solid var(--linkHover);
+}
+
+.rs-link img {
+   width: 150px;
+   border-radius: 1rem;
+}
+
+.rs-link img:hover {
+   background: var(--linkHover);
+}
